@@ -5,32 +5,36 @@ export const labels = [
     {
         id   : 'bbc73458-940b-421c-8d5f-8dcd23a9b0d6',
         title: 'Disponible',
-        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50 dark:bg-green-500 ng-star-inserted'
- 
+        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50 dark:bg-green-500 ng-star-inserted',
+        style: 'text-sm font-semibold text-gray-800 bg-gray-100 dark:text-gray-50'
     },
     {
         id   : 'e2f749f5-41ed-49d0-a92a-1c83d879e371',
         title: 'Separada',
-        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-yellow-800 bg-yellow-100 dark:text-yellow-50 dark:bg-yellow-500 ng-star-inserted'
+        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-yellow-800 bg-yellow-100 dark:text-yellow-50 dark:bg-yellow-500 ng-star-inserted',
+        style: 'text-sm font-semibold text-yellow-800 bg-yellow-100 dark:text-yellow-50'
  
     },
     {
         id   : 'f47c92e5-20b9-44d9-917f-9ff4ad25dfd0',
         title: 'Inconclusa',
-        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-orange-800 bg-orange-100 dark:text-orange-50 dark:bg-orange-500 ng-star-inserted'
+        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-orange-800 bg-orange-100 dark:text-orange-50 dark:bg-orange-500 ng-star-inserted',
+        style: 'text-sm font-semibold text-orange-800 bg-orange-100 dark:text-orange-50'
     },
     
     {
         id   : '6c288794-47eb-4605-8bdf-785b61a449d3',
         title: 'Confirmada',
-        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50 dark:bg-green-500 ng-star-inserted'
+        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50 dark:bg-green-500 ng-star-inserted',
+        style: 'text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50'
   
        
     },
     {
         id   : 'b1cde9ee-e54d-4142-ad8b-cf55dafc9528',
         title: 'Cumplida',
-        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-blue-800 bg-blue-100 dark:text-blue-50 dark:bg-blue-500 ng-star-inserted'
+        color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-blue-800 bg-blue-100 dark:text-blue-50 dark:bg-blue-500 ng-star-inserted',
+        style: 'text-sm font-semibold text-blue-800 bg-blue-100 dark:text-blue-50'
   
     }
     
@@ -66,11 +70,7 @@ export const notes = [
         title    : '8:00 am/ 8:30 am | Agendado por: Nicolas gutierrez ',
         content  : 'Juan Sebastian Gil Villa 3204502314 - 45288314 | Colmedica Medicina Prepagada',
         tasks    : [
-            {
-                id       : '330a924f-fb51-48f6-a374-1532b1dd353d',
-                content  : 'Consulta de primera vez por especialista en pediatria - Dr Fabio Rivera',
-                completed: false
-            },
+            
             {
                 id       : '781855a6-2ad2-4df4-b0af-c3cb5f302b40',
                 content  : 'Imuno terapia - Dra Maria camila Sanint',

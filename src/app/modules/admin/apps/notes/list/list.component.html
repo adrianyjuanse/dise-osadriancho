@@ -113,7 +113,7 @@
                     <ng-container *ngIf="(labels$ | async) as labels">
                         <ng-container *ngFor="let label of labels; trackBy: trackByFn">
                             <div
-                                class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
+                                class="{{label.style}} relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
                                 [ngClass]="{'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400': 'label:' + label.id === filterStatus,
                                     'text-hint hover:bg-hover': 'label:' + label.id !== filterStatus}"
                                 (click)="filterByLabel(label.id)"
@@ -122,20 +122,12 @@
                                 <mat-icon
                                     class="text-current"
                                     [svgIcon]="'heroicons_outline:tag'"></mat-icon>
-                                <div class="ml-3 leading-5 select-none text-default">{{label.title}}</div>
+                                <div>{{label.title}}</div>
                             </div>
                         </ng-container>
                     </ng-container>
                     <!-- Edit Labels -->
-                    <div
-                        class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer hover:bg-hover"
-                        (click)="openEditLabelsDialog()"
-                        matRipple>
-                        <mat-icon
-                            class="text-hint"
-                            [svgIcon]="'heroicons_outline:pencil'"></mat-icon>
-                        <div class="ml-3 leading-5 select-none">Edit labels</div>
-                    </div>
+                    
                 </div>
             </div>
         </mat-drawer>
