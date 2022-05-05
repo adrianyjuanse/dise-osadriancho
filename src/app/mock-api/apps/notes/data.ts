@@ -6,7 +6,7 @@ export const labels = [
         id   : 'bbc73458-940b-421c-8d5f-8dcd23a9b0d6',
         title: 'Disponible',
         color: 'py-0.5 px-3 rounded-full text-sm font-semibold text-green-800 bg-green-100 dark:text-green-50 dark:bg-green-500 ng-star-inserted',
-        style: 'text-sm font-semibold text-gray-800 bg-gray-100 dark:text-gray-50'
+        style: 'text-sm font-semibold text-blue-800 bg-gray-100 dark:text-blue-50'
     },
     {
         id   : 'e2f749f5-41ed-49d0-a92a-1c83d879e371',
