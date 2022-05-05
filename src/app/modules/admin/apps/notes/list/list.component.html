@@ -176,7 +176,7 @@
                         <mat-icon
                             class="icon-size-5"
                             [svgIcon]="'heroicons_solid:plus-circle'"></mat-icon>
-                        <span class="hidden sm:inline-block ml-2">Abrir Agenda</span>
+                        <span class="hidden sm:inline-block ml-2">Opciones</span>
                     </button>
                 </div>
 
@@ -212,13 +212,13 @@
                                                 <div class="flex flex-auto flex-col p-6 space-y-4">
                                                     <!-- Title -->
                                                     <ng-container *ngIf="note.title">
-                                                        <div class="font-semibold line-clamp-2">
+                                                        <div class="font-semibold line-clamp-3">
                                                             {{note.title}}
                                                         </div>
                                                     </ng-container>
                                                     <!-- Content -->
                                                     <ng-container *ngIf="note.content">
-                                                        <div [class.text-xl]="note.content.length < 70">
+                                                        <div class="font-semibold text-blue-800  dark:text-blue-50 dark:bg-blue-500" [class.text-xl]="note.content.length < 70 ">
                                                             {{note.content}}
                                                         </div>
                                                     </ng-container>
@@ -250,7 +250,7 @@
                                                     <ng-container *ngIf="note.labels">
                                                         <div class="flex flex-wrap items-center -m-1">
                                                             <ng-container *ngFor="let label of note.labels; trackBy: trackByFn">
-                                                                <div class="m-1 py-0.5 px-3 rounded-full text-sm font-medium text-gray-500 bg-gray-100 dark:text-gray-300 dark:bg-gray-700">
+                                                                <div class="py-0.5 px-3 rounded-full text-sm font-semibold text-amber-800 bg-amber-100 dark:text-amber-50 dark:bg-amber-500 ng-star-inserted">
                                                                     {{label.title}}
                                                                 </div>
                                                             </ng-container>

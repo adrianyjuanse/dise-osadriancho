@@ -53,8 +53,8 @@ export const notes = [
     },
     {
         id       : 'ffd20f3c-2d43-4c6b-8021-278032fc9e92',
-        title    : '8:00 am/ 8:30 am Juan Sebastian Gil Villa 3204502314 - 45288314',
-        content  : 'Colmedica Medicina Prepagada | Agendado por: Nicolas gutierrez',
+        title    : '8:00 am/ 8:30 am | Agendado por: Nicolas gutierrez ',
+        content  : 'Juan Sebastian Gil Villa 3204502314 - 45288314 | Colmedica Medicina Prepagada',
         tasks    : [
             {
                 id       : '330a924f-fb51-48f6-a374-1532b1dd353d',
