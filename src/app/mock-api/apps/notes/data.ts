@@ -102,6 +102,24 @@ export const notes = [
         createdAt: moment().hour(16).minute(4).subtract(47, 'day').toISOString(),
         updatedAt: null
     },
+    {
+        id       : 'ffd20f3c-2d43-4c6b-8021-278032fc9e92',
+        title    : '8:00 am/ 8:30 am | Agendado por: Nicolas gutierrez ',
+        content  : 'Juliana Tapasco Parra 3204502314 - 45288314 | Colmedica Medicina Prepagada',
+        tasks    : [
+            {
+                id       : '330a924f-fb51-48f6-a374-1532b1dd353d',
+                content  : 'Consulta de primera vez por especialista en pediatria - Dr Fabio Rivera',
+                completed: false
+            }
+        ],
+        image    : null,
+        reminder : null,
+        labels   : ['6c288794-47eb-4605-8bdf-785b61a449d3'],
+        archived : false,
+        createdAt: moment().hour(16).minute(4).subtract(47, 'day').toISOString(),
+        updatedAt: null
+    },
     
    
   

@@ -16,6 +16,8 @@ import { NotesDetailsComponent } from 'app/modules/admin/apps/notes/details/deta
 import { NotesListComponent } from 'app/modules/admin/apps/notes/list/list.component';
 import { NotesLabelsComponent } from 'app/modules/admin/apps/notes/labels/labels.component';
 import { notesRoutes } from 'app/modules/admin/apps/notes/notes.routing';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatMomentDateModule } from '@angular/material-moment-adapter';
 
 @NgModule({
     declarations: [
@@ -36,7 +38,9 @@ import { notesRoutes } from 'app/modules/admin/apps/notes/notes.routing';
         MatRippleModule,
         MatSidenavModule,
         FuseMasonryModule,
-        SharedModule
+        SharedModule,
+        MatDatepickerModule,
+        MatMomentDateModule
     ]
 })
 export class NotesModule

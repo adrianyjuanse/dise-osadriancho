@@ -24,7 +24,20 @@
                             [svgIcon]="'heroicons_outline:pencil-alt'"></mat-icon>
                         <div class="ml-3 leading-5 select-none text-default">Profesional</div>
                     </div>
-                    <!-- Archive -->
+                    <!-- Implementar este https://stackblitz.com/edit/angular-material-multiple-dates -->
+                    <form>
+
+                    <mat-form-field>
+                        <mat-label>Selecciona las fechas que deseas ver</mat-label>
+                        <input
+                            matInput
+                            [matDatepicker]="picker1">
+                        <mat-datepicker-toggle
+                            matSuffix
+                            [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                    </mat-form-field>
+                </form>
                     <div
                         class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
                         [ngClass]="{'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400': filterStatus === 'archived',
@@ -35,20 +48,9 @@
                         <mat-icon
                             class="text-current"
                             [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-                        <div class="ml-3 leading-5 select-none text-default">Lunes 23</div>
+                        <div class="ml-3 leading-5 select-none text-default">Lunes 4 Mayo</div>
                     </div>
-                    <div
-                        class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
-                        [ngClass]="{'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400': filterStatus === 'archived',
-                                'text-hint hover:bg-hover': filterStatus !== 'archived'}"
-                        (click)="filterByArchived()"
-                        matRipple
-                        [matRippleDisabled]="filterStatus === 'archived'">
-                        <mat-icon
-                            class="text-current"
-                            [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-                        <div class="ml-3 leading-5 select-none text-default">Martes 24</div>
-                    </div>
+                    
                     <div
                     class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
                     [ngClass]="{'bg-gray-200 dark:bg-gray-700 text-primary dark:text-primary-400': filterStatus === 'archived',
@@ -59,7 +61,7 @@
                     <mat-icon
                         class="text-current"
                         [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-                    <div class="ml-3 leading-5 select-none text-default">Martes 24</div>
+                    <div class="ml-3 leading-5 select-none text-default">Martes 5 Mayo</div>
                 </div>
                 <div
                 class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
@@ -71,7 +73,7 @@
                 <mat-icon
                     class="text-current"
                     [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-                <div class="ml-3 leading-5 select-none text-default">Miercoles 25</div>
+                <div class="ml-3 leading-5 select-none text-default">Miercoles 6 mayo</div>
             </div>
             <div
             class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
@@ -83,7 +85,7 @@
             <mat-icon
                 class="text-current"
                 [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-            <div class="ml-3 leading-5 select-none text-default">Jueves 26</div>
+            <div class="ml-3 leading-5 select-none text-default">Jueves 7 Mayo</div>
         </div>
         <div
         class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
@@ -95,7 +97,7 @@
         <mat-icon
             class="text-current"
             [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-        <div class="ml-3 leading-5 select-none text-default">Viernes 27</div>
+        <div class="ml-3 leading-5 select-none text-default">Viernes 8 Mayo</div>
     </div>
     <div
     class="relative flex items-center py-2 px-4 font-medium rounded-full cursor-pointer"
@@ -107,7 +109,7 @@
     <mat-icon
         class="text-current"
         [svgIcon]="'heroicons_outline:calendar'"></mat-icon>
-    <div class="ml-3 leading-5 select-none text-default">Sabado 28</div>
+    <div class="ml-3 leading-5 select-none text-default">Sabado 9 Mayo</div>
 </div>
                     <!-- Labels -->
                     <ng-container *ngIf="(labels$ | async) as labels">
@@ -154,7 +156,7 @@
                             <input
                                 matInput
                                 [autocomplete]="'off'"
-                                [placeholder]="'Buscar paciente'"
+                                [placeholder]="'Buscar Cita'"
                                 (input)="filterByQuery(searchInput.value)"
                                 #searchInput>
                         </mat-form-field>
